@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'LoginScreen2' do
     pod 'Alamofire', '~> 4.4'
+    pod 'SwiftyJSON'
 end
