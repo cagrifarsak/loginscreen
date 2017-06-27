@@ -40,7 +40,6 @@ class Login: UIViewController {
     }
 
     @IBAction func doLogin(_ sender: Any) {
-        
         // hide error message
         self.label.isHidden = true
 
@@ -50,7 +49,6 @@ class Login: UIViewController {
         ]
 
         Alamofire.request("http://ortakoltuk.com:8080/login", method: .post, parameters: parameters).responseJSON { response in
-            
 
             if let json = response.data {
 
