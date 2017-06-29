@@ -47,6 +47,7 @@ class Login: UIViewController {
             "email": emailBox.text ?? "",
             "password": passwordBox.text ?? ""
         ]
+        
 
         Alamofire.request("http://ortakoltuk.com:8080/login", method: .post, parameters: parameters).responseJSON { response in
 
@@ -71,5 +72,13 @@ class Login: UIViewController {
             }
         }
     }
+    
+    @IBAction func goToRegister(_ sender: UIButton) {
+        
+        DispatchQueue.main.async() {
+            self.performSegue(withIdentifier: "segue2", sender: self)
+        }
+    }
+    
 }
 

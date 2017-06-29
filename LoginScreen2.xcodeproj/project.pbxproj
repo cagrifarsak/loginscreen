@@ -14,6 +14,7 @@
 		A85804911EFB00FD009DC5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85804901EFB00FD009DC5C8 /* Assets.xcassets */; };
 		A85804941EFB00FD009DC5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85804921EFB00FD009DC5C8 /* LaunchScreen.storyboard */; };
 		A85804A21EFBCE6B009DC5C8 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85804A11EFBCE6B009DC5C8 /* Main.swift */; };
+		A85804C31F050BE6009DC5C8 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85804C21F050BE6009DC5C8 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A85804931EFB00FD009DC5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A85804951EFB00FD009DC5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A85804A11EFBCE6B009DC5C8 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		A85804C21F050BE6009DC5C8 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		B5169CE4B6BAC7CCE14590C6 /* Pods-LoginScreen2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginScreen2/Pods-LoginScreen2.debug.xcconfig"; sourceTree = "<group>"; };
 		FE71F5979B14D429E13F2164 /* Pods-LoginScreen2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginScreen2/Pods-LoginScreen2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 			children = (
 				A858048B1EFB00FD009DC5C8 /* Login.swift */,
 				A85804A11EFBCE6B009DC5C8 /* Main.swift */,
+				A85804C21F050BE6009DC5C8 /* Register.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			files = (
 				A858048C1EFB00FD009DC5C8 /* Login.swift in Sources */,
 				A858048A1EFB00FD009DC5C8 /* AppDelegate.swift in Sources */,
+				A85804C31F050BE6009DC5C8 /* Register.swift in Sources */,
 				A85804A21EFBCE6B009DC5C8 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
