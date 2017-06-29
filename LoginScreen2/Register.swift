@@ -12,6 +12,8 @@ import SwiftyJSON
 
 class Register: UIViewController {
     
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
     @IBOutlet weak var registerEmail: UITextField!
     
     @IBOutlet weak var registerName: UITextField!
@@ -32,6 +34,14 @@ class Register: UIViewController {
     }
     
     @IBAction func registerToLogin(_ sender: Any) {
+        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
+        
+        activityIndicator.startAnimating()
+        
         let parametersRegister: Parameters = [
             "email": registerEmail.text ?? "",
             "name": registerName.text ?? "",
@@ -39,6 +49,7 @@ class Register: UIViewController {
         ]
         
         Alamofire.request("http://ortakoltuk.com:8080/register", method: .post, parameters: parametersRegister).responseJSON { response in
+            
             
             if let json = response.data {
                 
@@ -50,13 +61,16 @@ class Register: UIViewController {
                     
                     DispatchQueue.main.async() {
                         self.performSegue(withIdentifier: "segue2", sender: self)
+                        
                     }
                     self.label.isHidden = true
+                    self.activityIndicator.stopAnimating()
                     
                     
                 } else {
                     print("başarısız")
                     self.label.isHidden = false
+                    self.activityIndicator.stopAnimating()
                 }
                 
             }

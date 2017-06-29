@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class Login: UIViewController {
 
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var emailBox: UITextField!
@@ -40,7 +41,14 @@ class Login: UIViewController {
     }
 
     @IBAction func doLogin(_ sender: Any) {
-        // hide error message
+        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
+        
+        activityIndicator.startAnimating()
+        
         self.label.isHidden = true
 
         let parameters: Parameters = [
@@ -64,9 +72,12 @@ class Login: UIViewController {
                         self.performSegue(withIdentifier: "segue1", sender: self)
                     }
 
+                    self.activityIndicator.stopAnimating()
+                    
                 } else {
                     print("başarısız")
                     self.label.isHidden = false
+                    self.activityIndicator.stopAnimating()
                 }
 
             }
