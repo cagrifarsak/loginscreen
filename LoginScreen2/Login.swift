@@ -39,7 +39,15 @@ class Login: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         self.title = ""
     }
-
+    
+    @IBAction func doRegister(_ sender: Any) {
+        
+        DispatchQueue.main.async() {
+            self.performSegue(withIdentifier: "segue3", sender: self)
+        }
+    }
+    
+    
     @IBAction func doLogin(_ sender: Any) {
         
         activityIndicator.center = self.view.center
@@ -85,6 +93,8 @@ class Login: UIViewController {
     }
     
     @IBAction func goToRegister(_ sender: UIButton) {
+        
+        //buton değil label şeklinde yap.
         
         DispatchQueue.main.async() {
             self.performSegue(withIdentifier: "segue2", sender: self)

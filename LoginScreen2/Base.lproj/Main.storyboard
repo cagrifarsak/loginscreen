@@ -60,35 +60,56 @@
                                 <color key="textColor" red="0.97967511415481567" green="0.070052735507488251" blue="0.010865709744393826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCI-yk-l0c">
-                                <rect key="frame" x="187" y="354.5" width="90" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daha kaydolmadın mı ?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgr-B4-u0s">
+                                <rect key="frame" x="99.5" y="354.5" width="176.5" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="mPW-1i-moV"/>
-                                    <constraint firstAttribute="width" constant="90" id="tIG-Lv-hdk"/>
+                                    <constraint firstAttribute="height" constant="15" id="ZfW-H5-4jm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="REGISTER">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDT-LN-lWs">
+                                <rect key="frame" x="186" y="374.5" width="90" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Lgj-y3-4Tw"/>
+                                    <constraint firstAttribute="height" constant="15" id="Ytr-ar-QHW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Kayıt Ol">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tf4-bp-GKa"/>
-                                    <segue destination="hgx-81-xmk" kind="show" identifier="segue2" id="pdw-Yf-B8X"/>
+                                    <action selector="doRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vG7-r0-rAN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTN-f6-Enf">
+                                <rect key="frame" x="218" y="375" width="58" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="zg0-vf-G61"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bct-ge-b79" firstAttribute="top" secondItem="Luc-E2-YyO" secondAttribute="bottom" constant="10" id="KOK-hb-UrT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bgr-B4-u0s" secondAttribute="trailing" constant="83" id="PsN-qv-ZLd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bct-ge-b79" secondAttribute="trailing" constant="30" id="QdS-gO-FJN"/>
-                            <constraint firstItem="ZCI-yk-l0c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="45" id="V6M-IY-lSb"/>
                             <constraint firstItem="6eF-WL-5uJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="X59-LT-d2d"/>
+                            <constraint firstItem="xTN-f6-Enf" firstAttribute="top" secondItem="bgr-B4-u0s" secondAttribute="bottom" constant="5.5" id="YDS-m8-dsS"/>
                             <constraint firstItem="Luc-E2-YyO" firstAttribute="top" secondItem="5cp-GB-gSg" secondAttribute="bottom" constant="40" id="avs-al-3eH"/>
-                            <constraint firstItem="ZCI-yk-l0c" firstAttribute="top" secondItem="bct-ge-b79" secondAttribute="bottom" constant="10" id="iy5-VF-wDu"/>
+                            <constraint firstItem="bgr-B4-u0s" firstAttribute="top" secondItem="bct-ge-b79" secondAttribute="bottom" constant="10" id="bbx-p2-Q0s"/>
+                            <constraint firstItem="QDT-LN-lWs" firstAttribute="top" secondItem="bgr-B4-u0s" secondAttribute="bottom" constant="5" id="fFS-07-IEQ"/>
+                            <constraint firstItem="bgr-B4-u0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kdt-pj-Hcf"/>
                             <constraint firstItem="5cp-GB-gSg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfL-jt-IiY"/>
                             <constraint firstItem="bct-ge-b79" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="ndH-st-0Uw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xTN-f6-Enf" secondAttribute="trailing" constant="83" id="o7w-yV-nKS"/>
                             <constraint firstItem="5cp-GB-gSg" firstAttribute="top" secondItem="6eF-WL-5uJ" secondAttribute="bottom" constant="50" id="sOI-Uv-cHr"/>
                             <constraint firstItem="Luc-E2-YyO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="45" id="xKM-C9-0d3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QDT-LN-lWs" secondAttribute="trailing" constant="83" id="z1m-ST-dNe"/>
                             <constraint firstItem="6eF-WL-5uJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z51-qB-v02"/>
                         </constraints>
                     </view>
@@ -98,6 +119,7 @@
                         <outlet property="label" destination="bct-ge-b79" id="uFF-9I-MZs"/>
                         <outlet property="passwordBox" destination="5cp-GB-gSg" id="7Gi-cB-IHw"/>
                         <segue destination="MFj-IS-64I" kind="show" identifier="segue1" id="6Dn-c6-sWI"/>
+                        <segue destination="hgx-81-xmk" kind="show" identifier="segue3" id="9kt-L4-LJx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -245,6 +267,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lQW-AY-m5v"/>
+        <segue reference="72z-mk-B0t"/>
     </inferredMetricsTieBreakers>
 </document>

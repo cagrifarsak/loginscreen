@@ -68,6 +68,9 @@ class Register: UIViewController {
                     
                     
                 } else {
+                    
+                    //textlerin içini boşalt.
+                    
                     print("başarısız")
                     self.label.isHidden = false
                     self.activityIndicator.stopAnimating()
