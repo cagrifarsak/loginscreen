@@ -33,6 +33,13 @@ class Register: UIViewController {
         
     }
     
+    
+    @IBAction func backLogin(_ sender: Any) {
+        DispatchQueue.main.async() {
+            self.performSegue(withIdentifier: "segue3", sender: self)
+        }
+    }
+    
     @IBAction func registerToLogin(_ sender: Any) {
         
         activityIndicator.center = self.view.center

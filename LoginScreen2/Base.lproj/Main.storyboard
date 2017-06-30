@@ -172,7 +172,7 @@
                                     <constraint firstAttribute="width" constant="90" id="ZBr-Wi-UfG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="SUBMIT">
+                                <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -180,7 +180,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kayıtlı kullanıcı girdiniz ! Farklı bir tane giriniz." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkQ-K3-Gr5">
-                                <rect key="frame" x="46.5" y="350" width="283" height="15"/>
+                                <rect key="frame" x="46.5" y="340" width="283" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="GFG-4g-fxH"/>
                                     <constraint firstAttribute="width" constant="283" id="HTj-HC-hcR"/>
@@ -189,16 +189,33 @@
                                 <color key="textColor" red="0.97967511415481567" green="0.070052735507488251" blue="0.010865709744393826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOT-pt-Qvy">
+                                <rect key="frame" x="187" y="365" width="90" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rVV-SU-sz7"/>
+                                    <constraint firstAttribute="width" constant="90" id="viz-sR-zrN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="0.98039221759999995" green="0.98431378599999997" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backLogin:" destination="hgx-81-xmk" eventType="touchUpInside" id="rxM-EL-rlw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KOT-pt-Qvy" firstAttribute="centerX" secondItem="3A4-e7-QNv" secondAttribute="centerX" constant="45" id="1ee-a6-KCo"/>
+                            <constraint firstItem="KOT-pt-Qvy" firstAttribute="top" secondItem="zkQ-K3-Gr5" secondAttribute="bottom" constant="10" id="85H-HX-EJ1"/>
                             <constraint firstItem="Isx-1I-S5s" firstAttribute="top" secondItem="iMf-dy-81G" secondAttribute="bottom" constant="40" id="9c1-Ty-isi"/>
                             <constraint firstItem="iMf-dy-81G" firstAttribute="centerX" secondItem="3A4-e7-QNv" secondAttribute="centerX" id="H0E-qV-b5N"/>
                             <constraint firstItem="CQM-hO-jBR" firstAttribute="centerX" secondItem="3A4-e7-QNv" secondAttribute="centerX" id="KBs-bM-nFu"/>
                             <constraint firstItem="CQM-hO-jBR" firstAttribute="top" secondItem="Isx-1I-S5s" secondAttribute="bottom" constant="40" id="XcM-RU-owK"/>
                             <constraint firstItem="zkQ-K3-Gr5" firstAttribute="centerX" secondItem="3A4-e7-QNv" secondAttribute="centerX" id="fys-gt-bTo"/>
                             <constraint firstItem="rYr-Fb-TFp" firstAttribute="centerX" secondItem="3A4-e7-QNv" secondAttribute="centerX" constant="45" id="gD6-NZ-qNj"/>
-                            <constraint firstItem="zkQ-K3-Gr5" firstAttribute="top" secondItem="rYr-Fb-TFp" secondAttribute="bottom" constant="20" id="jZK-9J-KOL"/>
+                            <constraint firstItem="zkQ-K3-Gr5" firstAttribute="top" secondItem="rYr-Fb-TFp" secondAttribute="bottom" constant="10" id="jZK-9J-KOL"/>
                             <constraint firstItem="iMf-dy-81G" firstAttribute="top" secondItem="5I5-za-dYx" secondAttribute="bottom" constant="80" id="kfp-v5-C5o"/>
                             <constraint firstItem="Isx-1I-S5s" firstAttribute="centerX" secondItem="3A4-e7-QNv" secondAttribute="centerX" id="qpk-4g-Pf1"/>
                             <constraint firstItem="rYr-Fb-TFp" firstAttribute="top" secondItem="CQM-hO-jBR" secondAttribute="bottom" constant="30" id="sJX-Ou-Jxk"/>
@@ -210,6 +227,7 @@
                         <outlet property="registerName" destination="Isx-1I-S5s" id="URG-5N-4P0"/>
                         <outlet property="registerPassword" destination="CQM-hO-jBR" id="ypX-dg-BJ7"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segue2" id="lQW-AY-m5v"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue3" id="LLs-Sx-Gsh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOd-6K-KRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,6 +285,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="72z-mk-B0t"/>
+        <segue reference="LLs-Sx-Gsh"/>
     </inferredMetricsTieBreakers>
 </document>
